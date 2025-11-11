@@ -42,7 +42,8 @@ namespace SigmaToolkit
                         ReconhecedorLParEABStar.Rodar();
                         break;
                     case 6:
-                        ProblemaInstanciaPorJson.Rodar();
+                        ClassificadorProblemaInstancia.Rodar();
+                        break;
                     case 7:
                         DecisorCadeiasAB.Rodar();
                         break;
@@ -54,6 +55,7 @@ namespace SigmaToolkit
                         break;
                     case 10:
                         SimuladorAFD.Rodar();
+                        break;
                 }
                 FuncoesAuxiliares.LimparTela();
             }
