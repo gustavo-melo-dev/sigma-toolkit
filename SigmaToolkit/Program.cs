@@ -8,7 +8,7 @@ namespace SigmaToolkit
         {
             while (true)
             {
-                Console.WriteLine("Sigma Toolkit");
+                Console.WriteLine("Projeto Toolkit (versao simples)");
                 Console.WriteLine("---- AV1 ----");
                 Console.WriteLine("1) Verificar alfabeto e cadeia (Sigma={ a,b})");
                 Console.WriteLine("2) Classificador T/I/N por JSON");
@@ -41,19 +41,22 @@ namespace SigmaToolkit
                     case 5:
                         ReconhecedorLParEABStar.Rodar();
                         break;
-                    case 9:
-                        DetectorDeLoop.Rodar();
-                        break;
-                    case 10:
-                        SimuladorAFD.Rodar();
+                    case 6:
+                        ProblemaInstanciaPorJson.Rodar();
                     case 7:
                         DecisorCadeiasAB.Rodar();
                         break;
                     case 8:
                         ReconhecedorCadeiaPar.Rodar();
                         break;
+                    case 9:
+                        DetectorDeLoop.Rodar();
+                        break;
+                    case 10:
+                        SimuladorAFD.Rodar();
                 }
                 FuncoesAuxiliares.LimparTela();
             }
         }
     }
+}
