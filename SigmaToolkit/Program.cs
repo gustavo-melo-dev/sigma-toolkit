@@ -15,10 +15,10 @@ namespace SigmaToolkit
                 Console.WriteLine("3) Decisor: termina com 'b'?");
                 Console.WriteLine("4) Avaliador proposicional (P,Q,R)");
                 Console.WriteLine("5) Reconhecedor: L_par_a e a b*");
-                //Console.WriteLine("---- AV2 ----");
-                //Console.WriteLine("6) Problema x instancia por JSON");
-                //Console.WriteLine("7) Decisores: L_fim_b e L_mult3_b");
-                //Console.WriteLine("8) Reconhecedor que pode nao terminar (a^i b ^ i)");
+                Console.WriteLine("---- AV2 ----");
+                Console.WriteLine("6) Problema x instancia por JSON");
+                Console.WriteLine("7) Decisores: L_fim_b e L_mult3_b");
+                Console.WriteLine("8) Reconhecedor que pode nao terminar (a^i b^i)");
                 Console.WriteLine("9) Detector ingenuo de loop");
                 Console.WriteLine("10) Simulador AFD simples (termina com 'b')");
                 Console.WriteLine("0) Sair");
@@ -46,10 +46,14 @@ namespace SigmaToolkit
                         break;
                     case 10:
                         SimuladorAFD.Rodar();
+                    case 7:
+                        DecisorCadeiasAB.Rodar();
+                        break;
+                    case 8:
+                        ReconhecedorCadeiaPar.Rodar();
                         break;
                 }
                 FuncoesAuxiliares.LimparTela();
             }
         }
     }
-}
